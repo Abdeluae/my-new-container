@@ -23,8 +23,8 @@ jobs:
 
       - name: Build and push the Docker image for ARM64
         run: |
-          docker buildx build --platform linux/arm64 --tag ghcr.io/tiiuae/my-new-container:latest --push .
+          docker buildx build --platform linux/arm64 --tag ghcr.io/Abdeluae/my-new-container:latest --push .
 
       - name: Run the Docker image
         run: |
-          docker run --platform linux/arm64 ghcr.io/tiiuae/my-new-container:latest
+          docker run --platform linux/arm64 ghcr.io/Abdeluae/my-new-container:latest
